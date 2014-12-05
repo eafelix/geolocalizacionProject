@@ -14,20 +14,17 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket){
-    console.log('User connected');
-    //Espero las posiones del resto
-    socket.on('myPosition', function(socket){
-        console.log('Nueva posicion');
-        //Notifico la posicion que me llego a los otros clientes
-        io.emit('notifiedPosition', { for: 'everyone' });
+
+    socket.on('myPosition', function(data){
+        console.log('Nueva posicion: '+ data.cords.latitude + ' ' +data.cords.longitude + ' .Usuario: ' + data.user );
+        socket.broadcast.emit('notifiedPosition', data);
     });
 
-    socket.on('disconnect', function(){
-        console.log('User disconnected');
-        io.emit('userLogOff',function(){
-
-        })
+    socket.on('disconnect', function (data) {
+        console.log('Desconexion de '+ data.user);
+        io.sockets.emit('userLogOff', data);
     });
 
 });
+
 
