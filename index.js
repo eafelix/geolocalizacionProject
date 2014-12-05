@@ -20,9 +20,8 @@ io.on('connection', function(socket){
         socket.broadcast.emit('notifiedPosition', data);
     });
 
-    socket.on('disconnect', function (data) {
-        console.log('Desconexion de '+ data.user);
-        io.sockets.emit('userLogOff', data);
+    socket.on('logOff', function(data){
+        socket.broadcast.emit('userLogOff', data);
     });
 
 });
