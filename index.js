@@ -16,14 +16,17 @@ app.get('/', function(req, res){
 io.on('connection', function(socket){
     console.log('User connected');
     //Espero las posiones del resto
-    socket.on('position', function(){
-        console.log('position');
+    socket.on('myPosition', function(socket){
+        console.log('Nueva posicion');
         //Notifico la posicion que me llego a los otros clientes
         io.emit('notifiedPosition', { for: 'everyone' });
     });
 
     socket.on('disconnect', function(){
         console.log('User disconnected');
+        io.emit('userLogOff',function(){
+
+        })
     });
 
 });

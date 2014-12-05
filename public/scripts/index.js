@@ -1,51 +1,69 @@
 var socket = io();
+var map;
+var users = [];
 
-function displayError(error) {
-    var errors = {
-        1: 'Permission denied',
-        2: 'Position unavailable',
-        3: 'Request timeout'
-    };
-    alert("Error: " + errors[error.code]);
+if (navigator.geolocation)
+{
+    var myName = prompt('Dime tu nombre para entrar en el servicio...');
+
+    var initialize = function() {
+        var mapOptions = {
+            center: { lat: -34.397, lng: 150.644},
+            zoom: 8
+        };
+
+        map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    function runService(){
+        console.log('Init service notification');
+
+        navigator.geolocation.getCurrentPosition(funcExito, funcError);
+
+        socket.on('notifiedPosition',function(user){
+            placeMarker(user);
+        })
+
+        socket.on('userLogOff',function(user){
+            rmUserMark(user);
+        })
+    }
+
+}
+else
+{
+    alert('No hay soporte para la geolocalización: podemos desistir o utilizar algún método alternativo');
 }
 
-function displayPosition(position) {
-    alert("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);
+
+
+function funcExito(position){
+    socket.emit('myPosition', {name:'pepe', cords:position.cords});
 }
 
-if (navigator.geolocation) {
-    var timeoutVal = 10 * 1000 * 1000;
-    navigator.geolocation.getCurrentPosition(
-        displayPosition,
-        displayError,
-        { enableHighAccuracy: true, timeout: timeoutVal, maximumAge: 0 }
-    );
-}
-else {
-    alert("Geolocation is not supported by this browser");
+function funcError(err){
+
 }
 
-function initialize() {
-    var mapOptions = {
-        center: { lat: -34.397, lng: 150.644},
-        zoom: 8
-    };
-
+function placeMarker(user) {
     var marker = new google.maps.Marker({
-        position: myLatlng,
+        position: new google.maps.LatLng(user.position.cords.lat,user.position.cords.lng),
         map: map,
-        title: 'Hello World!'
+        name:user.name
     });
-
-
-    var map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
+    var infowindow = new google.maps.InfoWindow({
+        content: 'Latitude: ' + location.lat() + '<br>Longitude: ' + location.lng()
+    });
+    infowindow.open(map,marker);
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+//user constructor
+function user(data){
+    user.name = data.name;
+    usar.position = data.position;
+}
 
-socket.emit('position', {data:'Me',position:'lalala'});
-socket.on('notifiedPosition',function(socket){
-
-});
 
