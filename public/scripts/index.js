@@ -39,7 +39,7 @@ function runService(){
     var cronPositionNotify = function () {
         navigator.geolocation.getCurrentPosition(funcExito, funcError);
     }
-    setInterval(cronPositionNotify,1000*1);
+    setInterval(cronPositionNotify,1000*5);
 
     socket.on('notifiedPosition',function(data){
         console.log('Notificando nueva posicion: '+ data.user);
@@ -54,6 +54,15 @@ function runService(){
     window.onbeforeunload = function () {
         socket.emit('logOff', user);
     }
+
+    //fit zoom to markers
+    var bounds = new google.maps.LatLngBounds();
+
+    markers.forEach(function(obj){
+        bounds.extend(obj.position);
+    })
+
+    map.fitBounds(bounds);
 }
 
 function funcExito(position){
@@ -65,7 +74,15 @@ function funcExito(position){
 }
 
 function funcError(err){
-
+   if(err.code === 0){
+       alertify.error( 'Unknown error');
+   } else if (err.code === 1){
+       alertify.error( 'Without permission, the service doesnt work');
+   } else if (err.code === 2){
+       alertify.error( 'Position unavailable');
+   } else if (err.code === 3){
+       alertify.error( 'TimeOut!');
+   }
 }
 
 function placeMarker(obj) {
@@ -91,11 +108,17 @@ var makersController = function (obj) {
     });
 
     markers.forEach(function (data) {
+
         if (data.title === obj.user) {
-            if(data.position.Lat !== obj.cords.latitude || data.position.Lng !== obj.cords.longitude){
+
+            console.log(data.position.lat() + '  ' +  obj.cords.latitude +'  ' + data.position.lng() + '  '+ obj.cords.longitude)
+
+            if(data.position.lat() !== obj.cords.latitude || data.position.lng() !== obj.cords.longitude){
+
                 data.position = latLng
-                console.log(data.position.Lat + '  ' +  obj.cords.latitude +'  ' + data.position.Lng + '  '+ obj.cords.longitude)
+                map.panTo(data.position);
                 alertify.log( 'User: ' + obj.user + ' change his position');
+
             }
             exists = true
             marker = data
@@ -107,7 +130,9 @@ var makersController = function (obj) {
         marker = new google.maps.Marker({
             position: latLng,
             map: map,
-            title: obj.user
+            title: obj.user,
+            draggable: false,
+            animation: google.maps.Animation.DROP
         });
 
         google.maps.event.addListener(marker, 'click', function () {
@@ -116,10 +141,12 @@ var makersController = function (obj) {
 
         markers.push(marker);
 
+        map.panTo(marker.position);
         alertify.success( 'User: ' + obj.user + ' conected');
     }
 
 }
+
 
 
 
