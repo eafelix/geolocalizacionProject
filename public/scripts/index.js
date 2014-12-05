@@ -1,6 +1,7 @@
 var socket = io();
 var map;
 var markers = [];
+var user;
 
 if (navigator.geolocation)
 {
@@ -35,8 +36,10 @@ function runService(){
     console.log('Init service notification...');
 
     console.log('Cron notify position...');
-    var cronPositionNotify = navigator.geolocation.getCurrentPosition(funcExito, funcError);
-    setInterval(cronPositionNotify,1000);
+    var cronPositionNotify = function () {
+        navigator.geolocation.getCurrentPosition(funcExito, funcError);
+    }
+    setInterval(cronPositionNotify,1000*30);
 
     socket.on('notifiedPosition',function(data){
         placeMarker(data);
@@ -45,54 +48,29 @@ function runService(){
     socket.on('userLogOff',function(data){
         rmUserMark(data);
     })
+
+    window.onbeforeunload = function () {
+        socket.emit('userLogOff', user);
+    }
 }
 
 function funcExito(position){
-
-    var exists = false;
-    var count = 0;
-    var user = {
-            user: myName,
-            cords: position.coords
-        };
+    user = {
+        user: myName,
+        cords: position.coords
+    };
 
     socket.emit('myPosition', user);
-
-    markers.forEach(function(obj){
-        if(obj.title === myName){
-            obj.position = new google.maps.LatLng(position.cords.latitude, position.cords.longitude)
-            exists = true
-        }
-    })
-
-    if(!exists){
-
-        var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
-        var marker = new google.maps.Marker({
-            position: latLng,
-            title: myName
-        });
-
-        var infowindow = new google.maps.InfoWindow({
-            content:  'ME'
-        });
-
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(marker.get('map'), marker);
-        });
-
-        markers.push(marker);
-    }
-
-    if(count === 0 ){
-        map.panTo(latLng);
-    }
-
+    makersController(user);
 }
 
 function funcError(err){
 
+}
+
+function placeMarker(obj) {
+    console.log('Update position: '+obj);
+    makersController(obj);
 }
 
 function rmUserMark(data){
@@ -103,56 +81,43 @@ function rmUserMark(data){
     alert('Disconected User: '+ data.user);
 }
 
-function placeMarker(obj) {
-
-    var exists = false;
-
-    console.log('Update position: '+obj);
-
-    makersController();
-}
-
 var makersController = function (obj) {
 
+    var marker;
+    var exists = false;
     var latLng = new google.maps.LatLng(obj.cords.latitude, obj.cords.longitude);
+    var infoWindow = new google.maps.InfoWindow({
+        content: 'User: ' + obj.user + '.Lat: ' + obj.cords.latitude + '.Lng: ' + obj.cords.longitude
+    });
 
     markers.forEach(function (data) {
         if (data.title === obj.user) {
             data.position = latLng
             exists = true
+            marker = data
         }
     })
 
     if (!exists) {
 
-
-        var marker = new google.maps.Marker({
+        marker = new google.maps.Marker({
             position: latLng,
             map: map,
-            title: obj.user,
-            id:
-
-        });
-
-        var infowindow = new google.maps.InfoWindow({
-            content: 'User: ' + obj.user + 'Lat: ' + obj.cords.latitude + '. Lng: ' + obj.cords.longitude
+            title: obj.user
         });
 
         google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(marker.get('map'), marker);
+            infoWindow.open(marker.get('map'), marker);
         });
 
-        alert('New User: ' + obj.user);
-
-        map.panTo(latLng);
+        markers.push(marker);
     }
 
+    infoWindow.open(marker.get('map'), marker);
 }
 
-//user constructor
-function user(data){
-    user.name = data.name;
-    usar.position = data.position;
-}
+
+
+
 
 
