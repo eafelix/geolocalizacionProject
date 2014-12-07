@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <title>Geolocalizacion Proyect</title>
     <link href="./css/index.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./src/alertify.js-0.3.11/themes/alertify.core.css" />
-    <link rel="stylesheet" href="./src/alertify.js-0.3.11/themes/alertify.bootstrap.css" />
+    <link rel="stylesheet" href="src/libs/alertify.js-0.3.11/themes/alertify.core.css" />
+    <link rel="stylesheet" href="src/libs/alertify.js-0.3.11/themes/alertify.bootstrap.css" />
 </head>
 
 <body>
 
+<div id="panel">
+    <h2>Actions</h2>
+    <input onclick="fitMarkers();" type=button value="Fit Markers">
+</div>
 <div id="map-canvas"></div>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRMUx7ABrehukm73sVnT32w5fA9HwF9bc"></script>
-<script src="./src/alertify.js-0.3.11/lib/alertify.min.js"></script>
+<script src="./src/libs/alertify.js-0.3.11/lib/alertify.min.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="./scripts/index.js"></script>
 </body>

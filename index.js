@@ -16,11 +16,12 @@ app.get('/', function(req, res){
 io.on('connection', function(socket){
 
     socket.on('myPosition', function(data){
-        console.log('Nueva posicion: '+ data.cords.latitude + ' ' +data.cords.longitude + ' .Usuario: ' + data.user );
+        console.log('User: ' + data.user +' position: '+ data.cords.latitude + ' ' +data.cords.longitude);
         socket.broadcast.emit('notifiedPosition', data);
     });
 
     socket.on('logOff', function(data){
+        console.log('User: ' + data.user + ' disconected');
         socket.broadcast.emit('userLogOff', data);
     });
 

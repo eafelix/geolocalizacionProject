@@ -5,11 +5,13 @@ var user = {};
 
 if (navigator.geolocation)
 {
-    user.user = prompt('Dime tu nombre para entrar en el servicio...');
+    var input = prompt('Dime tu nombre para entrar en el servicio...');
 
-    while(user.user === '' || user.user === undefined){
-        user.user = prompt('Por favor dame un nombre para identificarte...');
+    while(!input){
+        input = prompt('Por favor dame un nombre para identificarte...');
     }
+
+    user.user = input;
 
     //config Google Maps
     var initialize = function() {
@@ -33,16 +35,16 @@ else
 
 
 function runService(){
+
     console.log('Init service notification...');
 
-    console.log('Cron notify position...');
     var cronPositionNotify = function () {
         navigator.geolocation.getCurrentPosition(funcExito, funcError);
     }
     setInterval(cronPositionNotify,1000*5);
 
     socket.on('notifiedPosition',function(data){
-        console.log('Notificando nueva posicion: '+ data.user);
+        console.log('Notificando nueva position: '+ data.user);
         placeMarker(data);
     })
 
@@ -55,7 +57,9 @@ function runService(){
         socket.emit('logOff', user);
     }
 
-    //fit zoom to markers
+}
+
+function fitMarkers(){
     var bounds = new google.maps.LatLngBounds();
 
     markers.forEach(function(obj){
@@ -63,44 +67,48 @@ function runService(){
     })
 
     map.fitBounds(bounds);
+    map.panToBounds(bounds);
 }
 
 function funcExito(position){
-
     user.cords = position.coords;
-
-    socket.emit('myPosition', user);
     makersController(user);
+    socket.emit('myPosition', user);
 }
 
 function funcError(err){
-   if(err.code === 0){
-       alertify.error( 'Unknown error');
-   } else if (err.code === 1){
-       alertify.error( 'Without permission, the service doesnt work');
-   } else if (err.code === 2){
-       alertify.error( 'Position unavailable');
-   } else if (err.code === 3){
-       alertify.error( 'TimeOut!');
-   }
+    if(err.code === 0){
+        alertify.error( 'Unknown error');
+    } else if (err.code === 1){
+        alertify.error( 'Without permission, the service doesnt work');
+    } else if (err.code === 2){
+        alertify.error( 'Position unavailable');
+    } else if (err.code === 3){
+        alertify.error( 'TimeOut!');
+    }
 }
 
 function placeMarker(obj) {
-    console.log('Update position: '+obj);
+    console.log('Update posicion: '+ obj.cords.latitude + ' ' +obj.cords.longitude + ' .Usuario: ' + obj.user );
     makersController(obj);
 }
 
 function rmUserMark(data){
     markers = markers.filter(function( obj ) {
-        return obj.user !== data.user;
+        if(data.user !== obj.title){
+            return true;
+        }else{
+            obj.setMap(null);
+            alertify.error('User: '+data.user+' se desconecto');
+            return false;
+        }
     });
-
-    alertify.error( 'User: ' + obj.user + ' disconected');
 }
 
-var makersController = function (obj) {
+function makersController(obj) {
 
     var marker;
+    var image;
     var exists = false;
     var latLng = new google.maps.LatLng(obj.cords.latitude, obj.cords.longitude);
     var infoWindow = new google.maps.InfoWindow({
@@ -111,14 +119,12 @@ var makersController = function (obj) {
 
         if (data.title === obj.user) {
 
-            console.log(data.position.lat() + '  ' +  obj.cords.latitude +'  ' + data.position.lng() + '  '+ obj.cords.longitude)
+            console.log( 'Data a comparar: '+data.position.lat() + '  ' +  obj.cords.latitude +'  ' + data.position.lng() + '  '+ obj.cords.longitude)
 
-            if(data.position.lat() !== obj.cords.latitude || data.position.lng() !== obj.cords.longitude){
-
-                data.position = latLng
-                map.panTo(data.position);
+            if(!data.position.equals(latLng)){
+                data.setPosition(latLng);
+                //map.panTo(data.position);
                 alertify.log( 'User: ' + obj.user + ' change his position');
-
             }
             exists = true
             marker = data
@@ -127,11 +133,22 @@ var makersController = function (obj) {
 
     if (!exists) {
 
+        if(user.user === obj.user){
+            image = {
+                url: './src/imgs/marker3.png'
+            };
+        } else {
+            image = {
+                url: './src/imgs/marker2.png'
+            };
+        }
+
         marker = new google.maps.Marker({
             position: latLng,
             map: map,
             title: obj.user,
             draggable: false,
+            icon: image,
             animation: google.maps.Animation.DROP
         });
 
@@ -140,16 +157,8 @@ var makersController = function (obj) {
         });
 
         markers.push(marker);
-
-        map.panTo(marker.position);
+        //map.panTo(marker.position);
         alertify.success( 'User: ' + obj.user + ' conected');
     }
 
 }
-
-
-
-
-
-
-

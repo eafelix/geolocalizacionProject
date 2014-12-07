@@ -2,6 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f2270d-d30b-49ab-b897-be423bb170cb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/felix.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/.gitignore" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/.travis.yml" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/Contributors.md" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/Contributors.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/Gruntfile.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/Gruntfile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/README.md" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/bower.json" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/css/main.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/css/main.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/img/banner.jpg" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/img/banner.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/img/dialogs.png" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/img/dialogs.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/img/treehouse.png" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/img/treehouse.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/img/webdev.png" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/img/webdev.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/js/lib/sh/shBrushJScript.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/js/lib/sh/shBrushJScript.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/js/lib/sh/shCore.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/js/lib/sh/shCore.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/js/lib/sh/shCore.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/js/lib/sh/shCore.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/js/lib/sh/shCoreDefault.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/js/lib/sh/shCoreDefault.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/index.html" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/lib/alertify.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/lib/alertify.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/lib/alertify.min.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/lib/alertify.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/package.json" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/src/alertify.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/src/alertify.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/index.html" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/qunit/qunit.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/qunit/qunit.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/qunit/qunit.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/qunit/qunit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/alert.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/alert.test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/confirm.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/confirm.test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/global.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/global.test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/log.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/log.test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/prompt.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/prompt.test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/themes/alertify.bootstrap.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/themes/alertify.bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/themes/alertify.core.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/themes/alertify.core.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/themes/alertify.default.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/themes/alertify.default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/index.css" afterPath="$PROJECT_DIR$/public/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/scripts/index.js" afterPath="$PROJECT_DIR$/public/scripts/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,21 +67,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="450">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.184" vertical-offset="147" max-vertical-offset="522">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5755814" vertical-offset="1854" max-vertical-offset="2898">
-              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="3042">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="522">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -55,11 +125,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/public/views/widget.html" />
-        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/public/css/index.css" />
+        <option value="$PROJECT_DIR$/backup" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/scripts/index.js" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -113,6 +184,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocalizacionProyect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocalizacionProyect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocalizacionProyect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocalizacionProyect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alertify.js-0.3.11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocalizacionProyect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocalizacionProyect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alertify.js-0.3.11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocalizacionProyect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocalizacionProyect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -141,16 +300,15 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/src/libs" />
+    </key>
   </component>
   <component name="RunManager" selected="Node.js.index">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -158,6 +316,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -213,27 +375,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1317" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24525437" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39906833" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32453415" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27562642" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39906833" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3090062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -259,15 +421,30 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/scripts/index.js</url>
-          <line>115</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="450">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2898">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="450">
@@ -425,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08571429" vertical-offset="0" max-vertical-offset="420">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/namespace.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="3711" max-vertical-offset="4464">
@@ -439,21 +609,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96585363" vertical-offset="0" max-vertical-offset="630">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/alertify.js-0.3.11/lib/alertify.js">
+    <entry file="file://$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/lib/alertify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11556">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2195122" vertical-offset="0" max-vertical-offset="504">
           <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
@@ -461,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/index.html">
+    <entry file="file://$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5454545" vertical-offset="3132" max-vertical-offset="3690">
           <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
@@ -470,24 +633,48 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="33852" max-vertical-offset="42354">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="33832" max-vertical-offset="42354">
           <caret line="1887" column="22" selection-start-line="1887" selection-start-column="22" selection-end-line="1887" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="450">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5755814" vertical-offset="1854" max-vertical-offset="2898">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="3042">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="522">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.184" vertical-offset="147" max-vertical-offset="522">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding />
         </state>
       </provider>
