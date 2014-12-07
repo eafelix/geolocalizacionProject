@@ -2,12 +2,15 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var favicon = require('serve-favicon');
 
 http.listen(3000, function(){
     console.log('listening on *:3000');
 });
 
 app.use(express.static(__dirname + '/public'));
+
+app.use(favicon(__dirname + '/public/favicon.ico'));
 
 app.get('/', function(req, res){
     res.sendFile('index.html');
@@ -16,7 +19,7 @@ app.get('/', function(req, res){
 io.on('connection', function(socket){
 
     socket.on('myPosition', function(data){
-        console.log('User: ' + data.user +' position: '+ data.cords.latitude + ' ' +data.cords.longitude);
+        console.log('User: ' + data.user +' - Position: '+ data.cords.latitude + ' ' +data.cords.longitude);
         socket.broadcast.emit('notifiedPosition', data);
     });
 

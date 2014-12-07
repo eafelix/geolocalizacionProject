@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "express": "~4.10.4",
-    "socket.io": "~1.2.1"
+    "socket.io": "~1.2.1",
+    "serve-favicon": "~2.1.7"
   },
   "devDependencies": {
     "grunt": "~0.4.5",

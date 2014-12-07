@@ -5,10 +5,10 @@ var user = {};
 
 if (navigator.geolocation)
 {
-    var input = prompt('Dime tu nombre para entrar en el servicio...');
+    var input = prompt('Tell me your name to enter the service ...');
 
     while(!input){
-        input = prompt('Por favor dame un nombre para identificarte...');
+        input = prompt('Please give me a name to identify...');
     }
 
     user.user = input;
@@ -30,7 +30,7 @@ if (navigator.geolocation)
 }
 else
 {
-    alert('No hay soporte para la geolocalización: podemos desistir o utilizar algún método alternativo');
+    alert('No support for geolocation: we can withdraw or use an alternative method');
 }
 
 
@@ -39,17 +39,17 @@ function runService(){
     console.log('Init service notification...');
 
     var cronPositionNotify = function () {
-        navigator.geolocation.getCurrentPosition(funcExito, funcError);
+        navigator.geolocation.getCurrentPosition(funcSuccess, funcError);
     }
     setInterval(cronPositionNotify,1000*5);
 
     socket.on('notifiedPosition',function(data){
-        console.log('Notificando nueva position: '+ data.user);
+        console.log('Notice his position: '+ data.user);
         placeMarker(data);
     })
 
     socket.on('userLogOff',function(data){
-        console.log('Notificando Desconexion: '+ data.user);
+        console.log('Notice disconnected user: '+ data.user);
         rmUserMark(data);
     })
 
@@ -70,7 +70,7 @@ function fitMarkers(){
     map.panToBounds(bounds);
 }
 
-function funcExito(position){
+function funcSuccess(position){
     user.cords = position.coords;
     makersController(user);
     socket.emit('myPosition', user);
@@ -99,7 +99,7 @@ function rmUserMark(data){
             return true;
         }else{
             obj.setMap(null);
-            alertify.error('User: '+data.user+' se desconecto');
+            alertify.error('Notice user logoff: '+data.user+'');
             return false;
         }
     });
@@ -112,14 +112,12 @@ function makersController(obj) {
     var exists = false;
     var latLng = new google.maps.LatLng(obj.cords.latitude, obj.cords.longitude);
     var infoWindow = new google.maps.InfoWindow({
-        content: 'User: ' + obj.user + '.Lat: ' + obj.cords.latitude + '.Lng: ' + obj.cords.longitude
+        content: 'User: ' + obj.user + ' - Lat: ' + obj.cords.latitude + ' - Lng: ' + obj.cords.longitude
     });
 
     markers.forEach(function (data) {
 
         if (data.title === obj.user) {
-
-            console.log( 'Data a comparar: '+data.position.lat() + '  ' +  obj.cords.latitude +'  ' + data.position.lng() + '  '+ obj.cords.longitude)
 
             if(!data.position.equals(latLng)){
                 data.setPosition(latLng);
