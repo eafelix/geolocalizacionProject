@@ -1,50 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f2270d-d30b-49ab-b897-be423bb170cb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/felix.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/.gitignore" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/.travis.yml" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/.travis.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/Contributors.md" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/Contributors.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/Gruntfile.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/Gruntfile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/README.md" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/bower.json" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/css/main.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/img/banner.jpg" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/img/banner.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/img/dialogs.png" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/img/dialogs.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/img/treehouse.png" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/img/treehouse.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/img/webdev.png" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/img/webdev.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/js/lib/sh/shBrushJScript.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/js/lib/sh/shBrushJScript.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/js/lib/sh/shCore.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/js/lib/sh/shCore.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/js/lib/sh/shCore.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/js/lib/sh/shCore.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/assets/js/lib/sh/shCoreDefault.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/assets/js/lib/sh/shCoreDefault.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/example/index.html" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/example/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/lib/alertify.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/lib/alertify.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/lib/alertify.min.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/lib/alertify.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/package.json" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/src/alertify.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/src/alertify.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/index.html" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/qunit/qunit.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/qunit/qunit.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/qunit/qunit.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/qunit/qunit.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/alert.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/alert.test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/confirm.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/confirm.test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/global.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/global.test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/log.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/log.test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/test/specs/prompt.test.js" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/test/specs/prompt.test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/themes/alertify.bootstrap.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/themes/alertify.bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/themes/alertify.core.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/themes/alertify.core.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/src/alertify.js-0.3.11/themes/alertify.default.css" afterPath="$PROJECT_DIR$/public/src/libs/alertify.js-0.3.11/themes/alertify.default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/index.css" afterPath="$PROJECT_DIR$/public/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/scripts/index.js" afterPath="$PROJECT_DIR$/public/scripts/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b5f2270d-d30b-49ab-b897-be423bb170cb" name="Default" comment="" />
     <ignored path="geolocalizacionProyect.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.184" vertical-offset="147" max-vertical-offset="522">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="522">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="3042">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state vertical-scroll-proportion="1.0746269" vertical-offset="918" max-vertical-offset="3042">
+              <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -181,94 +138,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alertify.js-0.3.11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alertify.js-0.3.11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocalizacionProyect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,14 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="3042">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
@@ -673,8 +534,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.184" vertical-offset="147" max-vertical-offset="522">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="522">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0746269" vertical-offset="918" max-vertical-offset="3042">
+          <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
           <folding />
         </state>
       </provider>
