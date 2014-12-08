@@ -22,7 +22,7 @@ if (navigator.geolocation)
 
         map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
-    }
+    };
 
     google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -40,22 +40,22 @@ function runService(){
 
     var cronPositionNotify = function () {
         navigator.geolocation.getCurrentPosition(funcSuccess, funcError);
-    }
+    };
     setInterval(cronPositionNotify,1000*5);
 
     socket.on('notifiedPosition',function(data){
         console.log('Notice his position: '+ data.user);
         placeMarker(data);
-    })
+    });
 
     socket.on('userLogOff',function(data){
         console.log('Notice disconnected user: '+ data.user);
         rmUserMark(data);
-    })
+    });
 
     window.onbeforeunload = function () {
         socket.emit('logOff', user);
-    }
+    };
 
 }
 
@@ -64,7 +64,7 @@ function fitMarkers(){
 
     markers.forEach(function(obj){
         bounds.extend(obj.position);
-    })
+    });
 
     map.fitBounds(bounds);
     map.panToBounds(bounds);
@@ -124,10 +124,10 @@ function makersController(obj) {
                 //map.panTo(data.position);
                 alertify.log( 'User: ' + obj.user + ' change his position');
             }
-            exists = true
-            marker = data
+            exists = true;
+            marker = data;
         }
-    })
+    });
 
     if (!exists) {
 
