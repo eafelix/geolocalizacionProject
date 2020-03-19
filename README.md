@@ -1,10 +1,10 @@
-#Geolocation Proyect
+# Geolocation Proyect
 Small project to notify live geolocation of everyone connected to the page served via NodeJS.
 
-### Version
+## Version
 0.0.1
 
-### Tech
+## Tech Stack
 This proyect use:
 * [SocketIO] - enables real-time bidirectional event-based communication.
 * [Alertify] - Alert and notify api
@@ -13,7 +13,7 @@ This proyect use:
 * [Express] - fast node.js network app framework [@tjholowaychuk]
 * [Grunt] - task manager for nodejs.
 
-### Installation
+## Installation
 
 Install Dependencies:
 ```sh
